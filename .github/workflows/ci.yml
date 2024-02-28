@@ -24,7 +24,7 @@ jobs:
     - name: Build and deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        deploy_key: ${{ secrets.GITHUB_TOKEN }}
+        deploy_key: ${{ secrets.GH_TOKEN }}
         publish_dir: ./  # Set this to the directory containing your HTML files
         publish_branch: gh-pages
         enable_jekyll: false  # Set to true if you're using Jekyll
